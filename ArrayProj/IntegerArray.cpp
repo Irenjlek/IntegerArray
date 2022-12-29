@@ -144,3 +144,14 @@ void IntegerArray::insertAtEnd(int value)
 {
     insertBefore(value, _length);
 }
+
+int IntegerArray::FirstIndexOf(const int value)
+{
+    for (int j = 0; j < _length; j++) {
+        if (_data[j] == value) {
+            return j;
+        }
+    }
+    std::cout << "Not found!" << std::endl;
+    return -1;
+}

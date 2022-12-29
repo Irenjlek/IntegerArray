@@ -21,5 +21,6 @@ public:
 	void remove(int index);
 	void insertAtBeginning(int value);
 	void insertAtEnd(int value);
+	int FirstIndexOf(const int value);
 };
 
